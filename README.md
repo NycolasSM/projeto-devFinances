@@ -4,7 +4,7 @@
 
 <h2>Como Funciona:</h2>
 <p>===================/</p>
-<p>Neste aplicação você poderá ter um controle simples intuívo de suas finanças</p>
+<p>Nesta aplicação você poderá ter um controle simples intuitivo de suas finanças</p>
 <br>
 <h2>Como usar:</h2>
 <p>===================/</p>
