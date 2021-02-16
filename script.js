@@ -173,8 +173,8 @@ const Form = {
 
     clearFields() {
         Form.description.value = ""
-        Form.amount.amount = ""
-        Form.date.date = ""
+        Form.amount.value = ""
+        Form.date.value = ""
     },
 
     saveTransaction(transaction) {
