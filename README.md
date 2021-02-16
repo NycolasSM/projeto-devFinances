@@ -19,7 +19,7 @@
 <br>
 <br>
 <h4>Atualizações:</h4>
-<p>v.1.01</p>
+<p>v1.01</p>
 <ul>
 <li>Adicionado css mouse:pointer sobre os botões de remover a transação</li>
 <br>
