@@ -78,6 +78,12 @@ button {
     cursor: pointer;
 }
 
+.button-remove {
+
+    
+    cursor: pointer;
+}
+
 .button.new {
     display: inline-block;
     margin-bottom: 0.8rem;
@@ -103,6 +109,7 @@ button:hover {
 
 .button.cancel:hover {
     opacity: 1;
+
 }
 
 /* Header =================== */
