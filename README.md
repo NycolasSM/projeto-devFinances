@@ -39,3 +39,4 @@
 <li>Maik Brito <a href="https://github.com/maykbrito">https://github.com/maykbrito</a></li>
 <li>Rocketseat <a href="https://rocketseat.com.br/">https://rocketseat.com.br/</a></li>
 </ul>
+.
