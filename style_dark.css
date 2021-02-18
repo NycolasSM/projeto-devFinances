@@ -1,10 +1,16 @@
 /* Global ===================== */
 :root {
     --dars-blue:  #363f5f;
-    --green: #49AA26;
-    --light-green: #45d610;
+    --green: #478630;
+    --light-green: #3ba814;
     --red: #e92929;
-    --testewhite: rgb(199, 199, 199);
+    --background-color: #1c222b;
+    --header-color: rgb(52, 56, 65);
+    --button-color: rgb(75, 89, 99);
+    --data-tabble-color:  #29366b;
+    --letter-cards-color: rgb(221, 221, 221);
+    --modal-background-colo:  rgb(94, 117, 139);
+    --input-color: rgb(195, 196, 196);
 }
 
 * {
@@ -18,7 +24,7 @@ html {
 }
 
 body {
-    background: #f0f2f5;
+    background:var(--background-color);
     font-family: "Poppins", sans-serif;
 }
 
@@ -104,7 +110,7 @@ button:hover {
     align-items: center;
     justify-content: center;
 
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .button.cancel:hover {
@@ -112,9 +118,29 @@ button:hover {
 
 }
 
+/* Dark Mode =================== */
+
+.dark-mode:hover {
+    cursor: pointer;
+}
+
+#button_dark {
+    position: absolute;
+    z-index: 2;
+    top: 26px;
+    right: 340px;
+}
+
+#slider_dark {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 340px;
+}
+
 /* Header =================== */
 header {
-    background: #2D4A22;
+    background:var(--header-color);
     padding: 2rem  0 10rem ;
     text-align: center;
 }
@@ -138,23 +164,13 @@ header {
 /* Cards =================== */
 
 .card {
-    background: white;
+    background:var(--button-color);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
 
     margin-bottom: 2rem;
 
-    color: var(--dars-blue);
-}
-
-.card-dark {
-    background: rgb(66, 66, 66);
-    padding: 1.5rem 2rem;
-    border-radius: 0.25rem;
-
-    margin-bottom: 2rem;
-
-    color: var(--testewhite);
+    color: var(--letter-cards-color);
 }
 
 .card h3 {
@@ -175,7 +191,7 @@ header {
 
 .card.total {
     background: var(--green);
-    color: white;
+    color: var(--letter-cards-color);
 }
 
 /* Table =================== */
@@ -187,7 +203,7 @@ header {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: var(--data-tabble-color);
 }
 
 table thead tr th:first-child,
@@ -203,7 +219,8 @@ table tbody tr td:last-child
 }
 
 table thead th {
-    background: white;
+    background: var(--data-tabble-color);
+    color:var(--letter-cards-color);
 
     font-weight: normal;
     padding: 2rem 2rem;
@@ -220,12 +237,13 @@ table tbody tr:hover {
 }
 
 table tbody td {
-    background: white;
+    background: var(--data-tabble-color);
+    color: white;
     padding: 1rem 2rem;
 }
 
 td.description {
-    color: var(--dars-blue);
+    color: var(--letter-cards-color);
 }
 
 td.income {
@@ -261,8 +279,12 @@ td.expense {
     visibility: visible;
 }
 
+.nova-transação {
+    color: white;
+}
+
 .modal{
-    background: #f0f2f5;
+    background:var(--modal-background-colo);
     padding: 2.4rem;
 
     position: relative;
@@ -270,6 +292,11 @@ td.expense {
 
     width: 90%;             /* talvez nao use */
     max-width: 500px;
+}
+
+.input-color{
+    background-color: var(--input-color);
+    color: black;
 }
 
 /* Form =================== */

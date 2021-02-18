@@ -1,18 +1,59 @@
-const Modal = {
-    open() {
-        document
-            .querySelector(".modal-overlay")
-            .classList
-            .add("active")
+var darkTheme = document.getElementById("style-css")
+var toggle = true;
 
-    },
-    close() {                              // TODO criar uma função toogle ao inves de usar open and close, existe a função no .classlist
+const DarkMode = {
+    toggleDark() {
+    if ( darkTheme && toggle == true)  {
+        darkTheme.setAttribute('href', './style_light.css')
+        toggle = false
+    } else {
+        darkTheme.setAttribute('href', './style_dark.css')
+        toggle = true
+    }
+    }
+}
+    // toggleDark() {
+    //     if (document.getElementById("style-css").href = ("./style_dark.css")) {
+    //         (document.getElementById("style-css").href = ("./style_light.css"))
+    //     } else {
+    //         (document.getElementById("style-css").href = ("./style_dark.css"))
+    //     }
+        
+    // }
+
+
+//         (document.getElementById("button_dark").onclick = ("DarkMode.toggleLight()"))
+//     },
+    
+//     toggleLight() {
+//         (document.getElementById("style-css").href = ("./style_dark.css"))
+//         (document.getElementById("button_dark").onclick="DarkMode.toggleDark()")
+// },
+//  }
+
+
+const Modal = {
+    toggle() {
         document
             .querySelector(".modal-overlay")
             .classList
-            .remove("active")
+            .toggle("active")
     }
-};
+}
+// open() {
+//     document
+//         .querySelector(".modal-overlay")
+//         .classList
+//         .add("active")
+
+// },
+// close() {                              // TODO criar uma função toogle ao inves de usar open and close, existe a função no .classlist
+//     document
+//         .querySelector(".modal-overlay")
+//         .classList
+//         .remove("active")
+// }
+// };
 
 const Storage = {
     get() {
