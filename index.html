@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dev.finance$</title>
 
-    <link id="style-css" rel="stylesheet" href="./style_dark.css">
+    <link id="style-css" rel="stylesheet" href="./style_light.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
@@ -18,9 +18,10 @@
 
     <header>
         <img src="./assets/logo.svg" alt="Logo Dev Finance">
-        <div onclick="DarkMode.toggleDark()" ><img class="dark-mode" id="button_dark" height="31" src="./assets/botao_dark.svg" alt="imagem de Entradas"></span>
-             <img class="dark-mode" id="slider_dark" height="25" src="./assets/slider_dark.svg" alt="imagem de Entradas"></span>
-        </div>
+        <span>
+            <img onclick="DarkMode.toggle()" class="dark-mode" id="button_dark" height="31" src="./assets/botao_dark.svg" alt="imagem de Entradas"></span>
+             <img onclick="DarkMode.toggle()" class="dark-mode" id="slider_dark" height="24" src="./assets/slider_dark.svg" alt="imagem de Entradas"></span>
+        </span>
 
     </header>
 

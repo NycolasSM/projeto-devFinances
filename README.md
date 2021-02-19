@@ -18,6 +18,12 @@
 <br>
 <h4>Atualizações:</h4>
 <br>
+<p>v.1.03</p>
+<ul>
+<li>Animação simples no botão dark-theme</li>
+<li>Correções no código do botão</li>
+<li>Correção de bugs</li>
+</ul>
 <p>v.1.02</p>
 <ul>
 <li>Adicionado o botão dark-theme no canto superior da aplicação</li>

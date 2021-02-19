@@ -121,21 +121,24 @@ button:hover {
 /* Dark Mode =================== */
 
 .dark-mode:hover {
+    transition: width 2s;
+    width: 300px;
     cursor: pointer;
 }
 
 #button_dark {
     position: absolute;
+    text-align: center;
     z-index: 2;
-    top: 26px;
-    right: 340px;
+    width: min(45vw, 600px);
+    margin: 1px -5px;
 }
 
 #slider_dark {
     position: absolute;
     z-index: 1;
-    top: 30px;
-    right: 340px;
+    width: min(45vw, 600px);
+    margin: 5px;
 }
 
 /* Header =================== */
